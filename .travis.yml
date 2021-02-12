@@ -18,6 +18,6 @@ before_script:
 - psql -c "create database decide owner decide"
 - python manage.py migrate
 script: 
-- python manage.py voting
+- python manage.py test voting
 addons:
   postgresql: "9.6"
