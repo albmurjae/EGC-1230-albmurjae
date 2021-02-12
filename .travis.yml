@@ -1,6 +1,7 @@
+dist: xenial
 language: python 
 python: 
-- "3.7"
+- "3.6"
 services:
 - postgresql
 env: 
@@ -18,6 +19,19 @@ before_script:
 - psql -c "create database decide owner decide"
 - python manage.py migrate
 script: 
-- python manage.py test voting
+- python manage.py census
 addons:
-  postgresql: "9.6"
+  postgresql: "9.4"
+
+notifications:
+  email:
+    recipients:
+      - albmurjae@alum.us.es
+    on_success: always
+    on_failure: always
+
+deploy:
+  provider: heroku
+  app: pruebaegcalberto
+  strategy: git
+  apikey: 5f495c45-15e3-4b4c-ad75-40b3bc9e7eee
