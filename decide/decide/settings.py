@@ -120,11 +120,11 @@ WSGI_APPLICATION = 'decide.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dee895if7dcqtj',
-        'USER': 'uqgnhnylevyoyz',
+        'NAME': 'dba4ap4pjfndpo',
+        'USER': 'evqpltgwaztjnp',
         'PASSWORD':
-        'c5671fcf406df953b82c838e805c7904a6636869c7675f7cba98001fd8f99192',
-        'HOST': 'ec2-54-145-249-177.compute-1.amazonaws.com',
+        'a0c933118151df7774176803effe0ebe1fb2c1bcf5601514b6ed5210e9c97f8b',
+        'HOST': 'ec2-100-24-139-146.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
